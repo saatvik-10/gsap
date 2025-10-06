@@ -58,7 +58,6 @@ const Msg = () => {
       scrollTrigger: {
         trigger: '.message-content p',
         start: 'top 60%',
-        markers: true,
       },
     });
     paragraphTL.from('.message-content p', {
