@@ -68,6 +68,7 @@ body::-webkit-scrollbar {
 
       .hero-title {
         @apply text-dark-brown 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] 2xl:mb-0 mb-5;
+        -webkit-text-stroke: 2px white;
       }
 
       .hero-text-scroll {
