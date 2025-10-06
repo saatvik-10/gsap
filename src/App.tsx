@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar"
+
 function App() {
 
   return (
     <>
-      <h1 className="text-red-500">GSAP with React and Vite</h1> 
+      <main>
+        <Navbar />
+      </main>
     </>
   )
 }
