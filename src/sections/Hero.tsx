@@ -33,6 +33,21 @@ const Hero = () => {
         },
         '-=0.3'
       );
+
+    const heroTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.hero-container',
+        start: '1% top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+    heroTL.to('.hero-container', {
+      rotate: 7,
+      scale: 0.9,
+      yPercent: 30,
+      ease: 'power1.inOut',
+    });
   });
 
   return (
