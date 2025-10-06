@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
   }
 
   .message-content {
-    @apply bg-[#7f3b2d] text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
+    @apply bg-red-950 text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
 
     .msg-wrapper {
       @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar {
     }
 
     p {
-      @apply text-center font-paragraph;
+      @apply text-center font-paragraph font-semibold;
     }
 
     h1,
@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
     }
 
     .msg-text-scroll {
-      @apply rotate-[3deg] 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-[#7f3b2d];
+      @apply rotate-[-3deg] 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-red-900;
     }
   }
 
