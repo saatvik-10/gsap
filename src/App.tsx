@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Msg from './sections/Msg';
+import FightSection from './sections/FightSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Hero />
         <Msg />
+        <FightSection />
         <div className="h-dvh" ></div>
       </main>
     </>
