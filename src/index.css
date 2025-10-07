@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #faeade;
+  background-color: oklch(21% 0.034 264.665);
   color: #523122;
   font-family: 'Antonio', sans-serif;
   overflow-x: hidden;
