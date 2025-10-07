@@ -4,18 +4,31 @@ import Hero from './sections/Hero';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Msg from './sections/Msg';
 import FightSection from './sections/FightSection';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { useGSAP } from '@gsap/react';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
+  useGSAP(() => {
+    ScrollSmoother.create({
+      smooth: 3,
+      effects: true,
+    });
+  });
+
   return (
     <>
       <main>
         <Navbar />
-        <Hero />
-        <Msg />
-        <FightSection />
-        <div className="h-dvh" ></div>
+        <div id='smooth-wrapper'>
+          <div id='smooth-content'>
+            <Hero />
+            <Msg />
+            <FightSection />
+            <div className='h-dvh'></div>
+          </div>
+        </div>
       </main>
     </>
   );
