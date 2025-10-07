@@ -46,6 +46,7 @@ const Msg = () => {
       scrollTrigger: {
         trigger: '.msg-text-scroll',
         start: 'top 60%',
+        toggleActions: 'play none none reverse',
       },
     });
     revealTL.to('.msg-text-scroll', {
@@ -62,7 +63,7 @@ const Msg = () => {
     });
     paragraphTL.from('.message-content p', {
       yPercent: 300,
-      rotate: -3,
+      rotate: -6,
       ease: 'power1.inOut',
       duration: 1,
       stagger: 0.01,
