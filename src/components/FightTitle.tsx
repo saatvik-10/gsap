@@ -28,8 +28,17 @@ const FightTitle = () => {
       scrollTrigger: {
         trigger: '.fight-section',
         start: 'top 10%',
-        markers: true,
         toggleActions: 'play none none reverse',
+      },
+    });
+
+    gsap.from(secondTextSplit.chars, {
+      yPercent: 200,
+      stagger: 0.02,
+      ease: 'power1.inOut',
+      scrollTrigger: {
+        trigger: '.fight-section',
+        start: 'top 1%',
       },
     });
   });
@@ -52,7 +61,7 @@ const FightTitle = () => {
       </div>
 
       <div className='overflow-hidden 2xl:py-0 py-3 second-text-split text-red-900'>
-        <h1>The fire it leaves isn&apos;t.</h1>
+        <h1>The fire it leaves isn&apos;t</h1>
       </div>
     </div>
   );
