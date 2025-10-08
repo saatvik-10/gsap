@@ -170,7 +170,7 @@ body::-webkit-scrollbar {
     }
 
     .fight-imp-text-scroll {
-      @apply rotate-[3deg] border-[.5vw] border-[#e3d3bc] text-nowrap opacity-0 md:-mt-32 -mt-24;
+      @apply rotate-[3deg] border-[.5vw] border-[#82181a] text-nowrap opacity-0 md:-mt-36 -mt-24;
     }
 
     .fight-box {
