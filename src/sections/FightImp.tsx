@@ -39,7 +39,6 @@ const FightImp = () => {
       scrollTrigger: {
         trigger: '.fight-imp-section',
         start: 'top 30%',
-        markers: true,
         toggleActions: 'play none none reverse',
       },
     });
@@ -60,11 +59,10 @@ const FightImp = () => {
 
       <div className='flex md:flex-row flex-col justify-between md:px-10 px-5 mt-14 md:mt-0'>
         <div className='relative inline-block md:translate-y-20'>
-          <div className='general-title relative flex flex-col justify-center items- gap-24'>
+          <div className='general-title relative flex flex-col justify-center items-center gap-24'>
             <div className='overflow-hidden place-self-start'>
               <h1 className='text-white fight-title'>Violence fills the</h1>
             </div>
-
             <div
               style={{
                 clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
