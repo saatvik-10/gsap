@@ -6,7 +6,7 @@ const fights = [
     },
     {
         name: "Don't Give Up",
-        img: "/img/fc3.png",
+        img: "/img/fc5.jpg",
         rotation: "md:rotate-[8deg] rotate-0",
     },
     {
