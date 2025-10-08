@@ -93,7 +93,7 @@ const Msg = () => {
 
           <div className='flex-center md:mt-20 mt-10'>
             <div className='max-w-md px-10 flex-center overflow-hidden'>
-              <p>
+              <p className='font-paragraph'>
                 This isn&apos;t about winning or losing. It&apos;s about finding
                 who you are when the gloves come off
               </p>
