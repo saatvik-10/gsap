@@ -158,22 +158,22 @@ body::-webkit-scrollbar {
     }
   }
 
-  .nutrition-section {
-    @apply min-h-dvh 2xl:h-[120dvh] overflow-hidden relative;
+  .fight-imp-section {
+    @apply min-h-dvh 2xl:h-[120dvh] overflow-hidden relative bg-[#460809];
 
     .big-img {
       @apply w-full absolute 2xl:h-full md:h-2/3 h-1/2 left-0 bottom-0 object-bottom 2xl:object-contain object-cover;
     }
 
-    .nutrition-title {
+    .fight-title {
       @apply 2xl:max-w-4xl xl:max-w-2xl md:py-0 py-3 md:pb-5 pb-0 lg:pb-0 md:text-center text-[#513022];
     }
 
-    .nutrition-text-scroll {
-      @apply rotate-[-3deg] border-[.5vw] border-[#e3d3bc] text-nowrap opacity-0 md:-mt-32 -mt-24;
+    .fight-text-scroll {
+      @apply rotate-[3deg] border-[.5vw] border-[#e3d3bc] text-nowrap opacity-0 md:-mt-32 -mt-24;
     }
 
-    .nutrition-box {
+    .fight-box {
       @apply absolute md:bottom-16 bottom-5 w-full md:px-0 px-5;
 
       .list-wrapper {
