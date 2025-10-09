@@ -7,6 +7,7 @@ import FightSection from './sections/FightSection';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { useGSAP } from '@gsap/react';
 import FightImp from './sections/FightImp';
+import Benefits from './sections/Benefits';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -28,6 +29,7 @@ function App() {
             <Msg />
             <FightSection />
             <FightImp />
+            <Benefits />
             <div className='h-dvh'></div>
           </div>
         </div>
