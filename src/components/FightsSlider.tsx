@@ -1,5 +1,5 @@
 import { useGSAP } from '@gsap/react';
-import { fights } from '../constants/constants';
+import { fights } from '../data/data';
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
