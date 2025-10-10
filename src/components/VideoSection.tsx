@@ -45,7 +45,7 @@ const VideoSection = () => {
                 key={i}
                 className='absolute text-white font-bold text-md tracking-wider font-paragraph'
                 style={{
-                  transform: `rotate(${i * 40}deg) translateY(-93px)`,
+                  transform: `rotate(${i * 40}deg) translateY(-103px)`,
                   transformOrigin: 'center center',
                 }}
               >
