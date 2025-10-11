@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface AutoplayPromptProps {
   onPermissionGranted: () => void;
@@ -6,6 +7,10 @@ interface AutoplayPromptProps {
 
 const AutoplayPrompt = ({ onPermissionGranted }: AutoplayPromptProps) => {
   const [isLoading, setIsLoading] = useState(false);
+
+    const isSmallScreen = useMediaQuery({
+    query: '(max-width:1024px)',
+  });
 
   const handleEnterSite = async () => {
     setIsLoading(true);
@@ -44,6 +49,10 @@ const AutoplayPrompt = ({ onPermissionGranted }: AutoplayPromptProps) => {
             browser.
           </p>
         </div>
+
+        {isSmallScreen && (
+            <p className='mb-6 font-bold'>PLEASE SWITCH TO A BIGGER SCREEN TO EXPERIENCE THE THUNDER AS THIS SITE IS NOT FOR MOBILE SCREENS!</p>
+        )}
 
         <button
           onClick={handleEnterSite}

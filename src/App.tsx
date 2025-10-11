@@ -28,7 +28,9 @@ function App() {
   }, [hasPermission]);
 
   if (!hasPermission) {
-    return <AutoplayPrompt onPermissionGranted={() => setHasPermission(true)} />;
+    return (
+      <AutoplayPrompt onPermissionGranted={() => setHasPermission(true)} />
+    );
   }
 
   return (

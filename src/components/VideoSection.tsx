@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 const VideoSection = () => {
   const isMobile = useMediaQuery({
-    query: '(max-width: 768px',
+    query: '(max-width: 768px)',
   });
 
   useEffect(() => {
