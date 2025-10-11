@@ -1,6 +1,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
+import { ChevronDown } from 'lucide-react';
 import { useEffect } from 'react';
 
 const Hero = () => {
@@ -96,7 +97,9 @@ const Hero = () => {
             fists, and the truth.
           </h2>
 
-          <div className='hero-button'>Lets's Fight!</div>
+          <div className='hero-button'>Lets Fight!</div>
+
+          <ChevronDown className='text-white size-24 pt-15 animate-bounce' />
         </div>
       </div>
     </section>
