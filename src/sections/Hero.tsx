@@ -73,7 +73,6 @@ const Hero = () => {
           className='absolute bottom-0 top-14 object-auto scale-100 md:scale-200 w-full'
           autoPlay
           muted
-          loop
           playsInline
         />
         <div className='hero-content opacity-0'>
