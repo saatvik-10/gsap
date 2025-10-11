@@ -9,6 +9,7 @@ import { useGSAP } from '@gsap/react';
 import FightImp from './sections/FightImp';
 import Benefits from './sections/Benefits';
 import Hype from './sections/Hype';
+import Footer from './sections/Footer';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -36,7 +37,7 @@ function App() {
               <Hype />
             </div>
 
-            <div className='h-dvh'></div>
+            <Footer />
           </div>
         </div>
       </main>
