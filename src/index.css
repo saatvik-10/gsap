@@ -231,7 +231,7 @@ body::-webkit-scrollbar {
   }
 
   .hype-section {
-    @apply bg-red-950 relative w-full h-[150dvh];
+    @apply bg-red-950 relative w-full h-[135dvh];
 
     .pin-box {
       @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
@@ -247,7 +247,7 @@ body::-webkit-scrollbar {
   }
 
   .footer-section {
-    @apply 2xl:min-h-dvh overflow-hidden relative bg-[#222123];
+    @apply 2xl:min-h-dvh overflow-hidden relative bg-gray-900;
 
     .social-btn {
       @apply border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer;
