@@ -1,8 +1,18 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
+import { useEffect } from 'react';
 
 const Hero = () => {
+  useEffect(() => {
+    const video = document.querySelector('video');
+    if (video) {
+      setTimeout(() => {
+        video.muted = false;
+      }, 500);
+    }
+  }, []);
+
   useGSAP(() => {
     const titleSplit = SplitText.create('.hero-title', { type: 'chars' });
 
@@ -62,6 +72,9 @@ const Hero = () => {
           src='/vid/rule.mp4'
           className='absolute bottom-0 top-14 object-auto scale-100 md:scale-200 w-full'
           autoPlay
+          muted
+          loop
+          playsInline
         />
         <div className='hero-content opacity-0'>
           <div className='overflow-hidden'>

@@ -10,16 +10,26 @@ import FightImp from './sections/FightImp';
 import Benefits from './sections/Benefits';
 import Hype from './sections/Hype';
 import Footer from './sections/Footer';
+import AutoplayPrompt from './components/AutoplayPrompt';
+import { useState } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
+  const [hasPermission, setHasPermission] = useState(false);
+
   useGSAP(() => {
-    ScrollSmoother.create({
-      smooth: 3,
-      effects: true,
-    });
-  });
+    if (hasPermission) {
+      ScrollSmoother.create({
+        smooth: 3,
+        effects: true,
+      });
+    }
+  }, [hasPermission]);
+
+  if (!hasPermission) {
+    return <AutoplayPrompt onPermissionGranted={() => setHasPermission(true)} />;
+  }
 
   return (
     <>

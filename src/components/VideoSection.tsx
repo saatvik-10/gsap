@@ -1,11 +1,23 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useMediaQuery } from 'react-responsive';
+import { useEffect } from 'react';
 
 const VideoSection = () => {
   const isMobile = useMediaQuery({
     query: '(max-width: 768px',
   });
+
+  useEffect(() => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video) => {
+      if (video.src.includes('benefits.mp4')) {
+        setTimeout(() => {
+          video.muted = false;
+        }, 700);
+      }
+    });
+  }, []);
 
   useGSAP(() => {
     if (!isMobile) {
